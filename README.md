@@ -1,115 +1,395 @@
-# KrishiMitra — Farmer Friends
+# 🌾 KrishiMitra — Smart Farming Assistant
 
-A syllabus-aligned full-stack agriculture information app built with **React + JavaScript + Vite** on the frontend and **Node.js + Express** on the backend. The code intentionally uses plain JavaScript and CSS rather than TypeScript or a UI framework, so the implementation is easier to study alongside a JavaScript/React/Node/Express syllabus.
+### Empowering Farmers Through Technology
 
-## Features
+<p align="center">
+  <a href="https://krishimitra-farmerfriends.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-Visit_KrishiMitra-2E7D32?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  </a>
+  <a href="https://github.com/guptaakku89-debug/krishimitra-farmerfriends">
+    <img src="https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
+  </a>
+</p>
 
-- Responsive farmer dashboard with navigation
-- Searchable crop advisory cards and season filter
-- Live weather lookup by city using Open-Meteo geocoding and forecast APIs (no API key required)
-- Market-price table with **clearly labelled demonstration values** and links to official market portals
-- Selected government-scheme summaries linked to official portals
-- Feedback form with backend validation
-- Express routes, CommonJS modules (`require`/`module.exports`), middleware, CORS, JSON request parsing, and error handling
+<p align="center">
+  A farmer-focused agricultural platform designed to make essential farming information easier to access through a simple, multilingual, and responsive interface.
+</p>
 
-## Technology stack
+---
 
-- Frontend: React, JavaScript, Vite, CSS, Lucide React icons
-- Backend: Node.js, Express.js, CORS
-- API: Fetch API, JSON, async/await
-- Weather provider: Open-Meteo (live lookup requires internet access)
+## 🌐 Live Application
 
-## Run locally
+**🚀 Live Demo:** https://krishimitra-farmerfriends.vercel.app/
 
-Requirements: Node.js 18+ (Node 20+ recommended) and npm.
+**💻 Source Code:** https://github.com/guptaakku89-debug/krishimitra-farmerfriends
 
-1. Extract this ZIP and open the `krishimitra-final` folder in VS Code.
-2. Open a terminal in that folder and install the root helper dependency:
+Explore KrishiMitra and its agricultural dashboard, designed to bring essential farming-related services together in one place.
 
-   ```bash
-   npm install
-   npm run install:all
-   ```
+---
 
-3. Start frontend and backend in one terminal:
+## 📌 Table of Contents
 
-   ```bash
-   npm run dev
-   ```
+- [Overview](#-overview)
+- [Problem Statement](#-problem-statement)
+- [Objectives](#-objectives)
+- [Features](#-features)
+- [Technology Stack](#️-technology-stack)
+- [Application Modules](#-application-modules)
+- [Design Philosophy](#-design-philosophy)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [Available Scripts](#-available-scripts)
+- [Deployment](#-deployment)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [Author](#-author)
+- [License](#-license)
 
-4. Open the Vite URL shown in the terminal, usually `http://localhost:5173`.
-5. Backend health check: `http://localhost:5000/api/health`.
+---
 
-You can also start them separately in two terminals:
+## 🌱 Overview
+
+Agriculture is an essential part of India's economy and supports the livelihoods of millions of people.
+
+However, accessing useful farming information can sometimes require navigating multiple websites and information sources.
+
+**KrishiMitra — Smart Farming Assistant** is a web-based agricultural platform designed to simplify this experience by organizing farming-related services within a single interface.
+
+The application provides dedicated sections for weather information, agricultural market prices, crop and fertilizer guidance, and government schemes.
+
+With its nature-inspired design and Hindi and English language options, KrishiMitra aims to offer a straightforward digital experience for users seeking agricultural information.
+
+### Project Highlights
+
+- Centralized agricultural dashboard.
+- Dedicated farming-related service modules.
+- Hindi and English language options.
+- Voice interaction controls.
+- Nature-inspired user interface.
+- Responsive web design.
+- Online deployment through Vercel.
+
+---
+
+## 🎯 Problem Statement
+
+Farmers need access to different types of information to support their agricultural decisions.
+
+Weather conditions, market prices, crop management, fertilizer guidance, and government assistance programs can all influence farming activities.
+
+When this information is difficult to find or navigate, it can create unnecessary friction for users.
+
+KrishiMitra aims to address this accessibility challenge by bringing these categories of agricultural services together through a unified web interface.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of KrishiMitra are:
+
+- To make agricultural information easier to navigate.
+- To organize essential farming services in one interface.
+- To improve accessibility through multilingual support.
+- To create a simple and user-friendly agricultural dashboard.
+- To provide a responsive experience across different devices.
+- To explore how modern web technologies can support digital agriculture.
+
+---
+
+## ✨ Features
+
+### 🌦️ Weather
+
+A dedicated section for weather-related information to support agricultural planning.
+
+### 💹 Mandi Prices
+
+A dedicated interface for exploring agricultural market price information.
+
+### 🌿 Crop & Fertilizer Advice
+
+An agricultural guidance section focused on crop-related information and fertilizer advice.
+
+### 🏛️ Government Schemes
+
+A dedicated section for accessing information about government schemes relevant to farmers.
+
+### 🌐 Multilingual Interface
+
+Provides Hindi and English language options to make the interface accessible to users with different language preferences.
+
+### 🗣️ Voice Interaction
+
+Includes Speak and Listen controls intended to support voice-based interaction and accessibility.
+
+### 🌙 Theme Toggle
+
+Includes a theme toggle for switching between supported visual modes.
+
+### 🎨 Nature-Inspired Design
+
+The interface uses an agricultural visual identity inspired by green crops, forest landscapes, natural colors, and golden harvests.
+
+### 📱 Responsive Interface
+
+Designed to provide a consistent experience across desktop computers, tablets, and mobile devices.
+
+> **Note:** The availability and behavior of individual services depend on their implementation and any required external integrations. Consult the live application to verify current functionality.
+
+---
+
+## 🛠️ Technology Stack
+
+KrishiMitra is built using modern frontend web technologies.
+
+| Technology | Purpose |
+|---|---|
+| React | Building reusable UI components |
+| TypeScript | Type-safe JavaScript development |
+| Vite | Development server and production build tooling |
+| HTML5 | Web application structure |
+| CSS | Styling and responsive layouts |
+| JavaScript | Application behavior |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Vercel | Web application deployment |
+
+The project may also use additional libraries for UI components, icons, styling, and other interface functionality.
+
+---
+
+## 🧩 Application Modules
+
+The application is organized around the following service categories.
+
+| Module | Description |
+|---|---|
+| Weather | Weather-related information |
+| Mandi Prices | Agricultural market price information |
+| Crop & Fertilizer Advice | Crop and fertilizer guidance |
+| Government Schemes | Information about farmer-related government programs |
+
+These modules are accessible through the main application navigation.
+
+---
+
+## 🎨 Design Philosophy
+
+KrishiMitra uses a nature-inspired design system that reflects the agricultural environment.
+
+### Visual Identity
+
+- **Forest green:** Represents agriculture, growth, and nature.
+- **Fresh leaf green:** Adds freshness and visual emphasis.
+- **Harvest gold:** Represents crops and agricultural abundance.
+- **Warm cream:** Creates a comfortable, uncluttered background.
+- **Soft sage:** Provides subtle contrast between interface sections.
+
+### User Experience Principles
+
+- Clear and consistent navigation.
+- Readable typography.
+- Organized information hierarchy.
+- Consistent buttons and interface components.
+- Responsive page layouts.
+- A simple interface that avoids unnecessary complexity.
+
+The goal is to create a modern agricultural platform that feels welcoming, practical, and easy to navigate.
+
+---
+
+## 🚀 Getting Started
+
+Follow the instructions below to run KrishiMitra on your local machine.
+
+### Prerequisites
+
+Install the following:
+
+- [Node.js](https://nodejs.org/)
+- npm, included with Node.js
+- [Git](https://git-scm.com/)
+- A code editor such as [Visual Studio Code](https://code.visualstudio.com/)
+
+### 1. Clone the Repository
+
+Open a terminal and run:
 
 ```bash
-cd backend
+git clone https://github.com/guptaakku89-debug/krishimitra-farmerfriends.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd krishimitra-farmerfriends
+```
+
+### 3. Install Dependencies
+
+```bash
 npm install
+```
+
+### 4. Start the Development Server
+
+```bash
 npm run dev
 ```
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+Vite will start the development server and display a local URL in your terminal.
 
-The frontend uses `http://localhost:5000` by default. To use a deployed API, create `frontend/.env` with:
+Open the displayed URL in your browser to access the application.
 
-```env
-VITE_API_URL=https://your-backend-domain.example
-```
-
-Restart/rebuild the frontend after changing environment variables. Do not put secret keys in variables prefixed with `VITE_`.
-
-## API endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/api/health` | API health check |
-| GET | `/api/crops` | List crop guides; optional `?q=wheat&season=Rabi` |
-| GET | `/api/crops/:id` | One crop guide |
-| GET | `/api/market-prices` | Demonstration market-price records |
-| GET | `/api/weather?city=Delhi` | Live weather lookup by city |
-| POST | `/api/feedback` | Validate and accept feedback JSON |
-
-Example feedback body:
-
-```json
-{
-  "name": "Farmer",
-  "topic": "Crop advisory",
-  "message": "Please add local crop guidance."
-}
-```
-
-## Important limitations
-
-- **Market values are fictional demonstration placeholders.** They are not current mandi prices and must not be used for trading decisions. Replace the data in `backend/routes/marketRoutes.js` with a reliable, permitted source before presenting it as live data.
-- Crop information is general educational guidance, not location-specific agronomic advice. Verify planting, fertilizer and plant-protection decisions with a local agriculture department or Krishi Vigyan Kendra.
-- Feedback is held in backend memory and disappears when the server restarts. There is no database or authentication in this version.
-- Weather is live through Open-Meteo, so weather lookup requires internet access and the external service to be available.
-- Government scheme eligibility and rules can change; follow the linked official portal for current details.
-- This is a functional educational project, not a production-ready agricultural decision system.
-
-## Build frontend
+### 5. Build for Production
 
 ```bash
-npm run build --prefix frontend
+npm run build
 ```
 
-The production frontend files are generated in `frontend/dist`. Deploy the frontend and backend separately, configure `VITE_API_URL` to point to the deployed backend, and set the backend's `FRONTEND_URL` environment variable to your deployed frontend origin (comma-separated origins are supported).
+After a successful build, the production-ready files are generated in the `dist` directory.
 
-## Deployment notes
+### 6. Preview the Production Build
 
-- Frontend can be deployed to Vercel or another static hosting provider using `frontend` as the project root, build command `npm run build`, output directory `dist`.
-- Backend can be deployed to a Node.js hosting provider using `backend` as the project root and start command `npm start`.
-- Set `PORT` if required by the backend host. Set `FRONTEND_URL` to your deployed frontend URL to restrict browser CORS access.
-- If your host uses a separate monorepo build configuration, configure the frontend and backend roots independently.
+```bash
+npm run preview
+```
 
-## Syllabus mapping
+This command starts a local server to preview the production build.
 
-- Unit I: variables, functions, conditions, loops, array methods and event-driven UI logic
-- Unit II: arrays/objects, destructuring, async/await, error handling, Fetch API and JSON
-- Unit III: React components, Node.js, npm and modules (`require`, `module.exports`)
-- Unit IV: Express routes, HTTP methods, request/response objects, middleware and CORS
+---
+
+## 📁 Project Structure
+
+The project uses a modern frontend application structure.
+
+```text
+krishimitra-farmerfriends/
+│
+├── public/                  # Public assets
+├── src/                     # Application source code
+├── package.json             # Dependencies and npm scripts
+├── tsconfig.json            # TypeScript configuration
+├── eslint.config.js         # ESLint configuration
+├── components.json          # UI component configuration
+├── bun.lock                 # Bun dependency lockfile
+├── .gitignore               # Git ignore rules
+└── README.md                # Project documentation
+```
+
+The exact contents of the source directories depend on the current implementation.
+
+---
+
+## 📜 Available Scripts
+
+The following scripts are defined for project development and production builds.
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Builds the application for production |
+| `npm run preview` | Previews the production build |
+
+Use the commands from the project root directory.
+
+---
+
+## 🌍 Deployment
+
+KrishiMitra is deployed using Vercel.
+
+### Live Website
+
+**https://krishimitra-farmerfriends.vercel.app/**
+
+### Deployment Workflow
+
+1. Maintain the application source code in GitHub.
+2. Import the repository into Vercel.
+3. Configure the appropriate framework and build settings.
+4. Deploy the application.
+5. Test the production website.
+
+For a standard Vite application, the typical production settings are:
+
+| Setting | Value |
+|---|---|
+| Framework Preset | Vite |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
+
+These settings may need adjustment if the project configuration changes.
+
+When GitHub integration is configured, pushes to the connected production branch can trigger automatic deployments.
+
+---
+
+## 🔮 Future Enhancements
+
+Potential improvements for future versions include:
+
+- Personalized crop recommendations.
+- Location-based weather information.
+- Improved regional agricultural market information.
+- Crop disease identification and prevention guidance.
+- Access to verified agricultural government schemes.
+- Support for additional Indian languages.
+- Enhanced accessibility for users with limited digital literacy.
+- Improved mobile navigation and usability.
+- Integration with reliable agricultural data sources.
+- Better visualization of agricultural trends.
+
+These are potential enhancements, not claims about features already implemented.
+
+---
+
+## 🤝 Contributing
+
+Contributions that improve usability, accessibility, documentation, and agricultural relevance are welcome.
+
+### Contribution Guidelines
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Implement your changes.
+4. Test the application.
+5. Commit your changes with a descriptive message.
+6. Submit a pull request explaining the changes.
+
+Please ensure that contributions preserve existing functionality and follow the project's coding conventions.
+
+---
+
+## 👨‍💻 Author
+
+**Project:** KrishiMitra — Smart Farming Assistant
+
+**Repository:**  
+https://github.com/guptaakku89-debug/krishimitra-farmerfriends
+
+**Live Demo:**  
+https://krishimitra-farmerfriends.vercel.app/
+
+Developed as an agricultural technology project focused on making farming-related information easier to access through a multilingual web interface.
+
+---
+
+## 📄 License
+
+No license has been specified in this README.
+
+If you intend to distribute the source code or permit others to reuse it, add an appropriate open-source license to the repository.
+
+---
+
+<p align="center">
+  🌾 <strong>KrishiMitra — Technology for Smarter Farming</strong>
+  <br>
+  Making agricultural information easier to access.
+  <br><br>
+  <a href="https://krishimitra-farmerfriends.vercel.app/">Visit Live Website</a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/guptaakku89-debug/krishimitra-farmerfriends">View Source Code</a>
+</p>
