@@ -6,7 +6,7 @@
   <a href="https://krishimitra-farmerfriends.vercel.app/">
     <img src="https://img.shields.io/badge/Live_Demo-Visit_KrishiMitra-2E7D32?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
   </a>
-  <a href="https://github.com/guptaakku89-debug/krishimitra-farmerfriends">
+  <a href="https://github.com/guptaakku89-debug/Krishimitra">
     <img src="https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
   </a>
 </p>
@@ -21,7 +21,7 @@
 
 **🚀 Live Demo:** https://krishimitra-farmerfriends.vercel.app/
 
-**💻 Source Code:** https://github.com/guptaakku89-debug/krishimitra-farmerfriends
+**💻 Source Code:** https://github.com/guptaakku89-debug/Krishimitra
 
 Explore KrishiMitra and its agricultural dashboard, designed to bring essential farming-related services together in one place.
 
@@ -391,5 +391,5 @@ If you intend to distribute the source code or permit others to reuse it, add an
   <br><br>
   <a href="https://krishimitra-farmerfriends.vercel.app/">Visit Live Website</a>
   &nbsp;•&nbsp;
-  <a href="https://github.com/guptaakku89-debug/krishimitra-farmerfriends">View Source Code</a>
+  <a href="https://github.com/guptaakku89-debug/Krishimitra">View Source Code</a>
 </p>
